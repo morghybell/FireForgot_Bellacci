@@ -1,0 +1,18 @@
+﻿<Window x:Class="FireForgot_Bellacci.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FireForgot_Bellacci"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="900">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="a.jpg"/>
+        </Grid.Background>
+        <Button x:Name="Btn_Start" Content="Fire" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Background="Black" BorderBrush="#FFFF00F3" Foreground="White" Height="113" Width="230" FontSize="72" FontFamily="AR CARTER" Click="Btn_Start_Click"/>
+        <Button x:Name="Btn_Stop" Content="Stop" HorizontalAlignment="Center" Margin="0,311,0,0" VerticalAlignment="Top" Background="Black" BorderBrush="Magenta" Foreground="White" Height="113" Width="230" FontSize="72" FontFamily="AR CARTER" Click="Btn_Stop_Click"/>
+        <Label Content="Ciao" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontFamily="AR CARTER" FontSize="72" Background="Transparent"/>
+
+    </Grid>
+</Window>
