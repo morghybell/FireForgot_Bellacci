@@ -12,7 +12,7 @@
         </Grid.Background>
         <Button x:Name="Btn_Start" Content="Fire" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Background="Black" BorderBrush="#FFFF00F3" Foreground="White" Height="113" Width="230" FontSize="72" FontFamily="AR CARTER" Click="Btn_Start_Click"/>
         <Button x:Name="Btn_Stop" Content="Stop" HorizontalAlignment="Center" Margin="0,311,0,0" VerticalAlignment="Top" Background="Black" BorderBrush="Magenta" Foreground="White" Height="113" Width="230" FontSize="72" FontFamily="AR CARTER" Click="Btn_Stop_Click"/>
-        <Label Content="Ciao" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontFamily="AR CARTER" FontSize="72" Background="Transparent"/>
+        <Label x:Name="Lbl_Risultato" Content="Ciao" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontFamily="AR CARTER" FontSize="72" Background="Transparent"/>
 
     </Grid>
 </Window>

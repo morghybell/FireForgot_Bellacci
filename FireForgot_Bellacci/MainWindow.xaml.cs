@@ -33,9 +33,16 @@ namespace FireForgot_Bellacci
         private void Btn_Start_Click(object sender, RoutedEventArgs e)
         {
             cts = new CancellationTokenSource();
-            Worker wrk = new Worker(10, 1000, cts);
+            //Worker wrk = new Worker(10, 1000, cts);
+            IProgress<int> progress = new Progress<int>(UpdateUI);
+            WorkerProgress wrk = new WorkerProgress(10, 1000, cts, progress);
             wrk.Start();
             MessageBox.Show("Mi dimentico del thread secondario e visualizzo subito questo messaggio senza attendere che l'altro abbia finito", "Informazioni", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void UpdateUI(int i)
+        {
+            Lbl_Risultato.Content = i.ToString();
         }
 
         private void Btn_Stop_Click(object sender, RoutedEventArgs e)
